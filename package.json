@@ -1,0 +1,29 @@
+{
+  "name": "assessments",
+  "version": "0.0.1",
+  "description": "A collection of company skill assessments",
+  "main": "index.js",
+  "scripts": {
+    "geocent": "npm start --prefix ./geocent",
+    "logdna": "npm start --prefix ./logdna",
+    "lucid": "npm start --prefix ./lucid",
+    "blavity": "node ./bin/blavity.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smguggen/assessments.git"
+  },
+  "keywords": [
+    "assessments",
+    "skill-assessments"
+  ],
+  "author": "Steven Guggenheimer <sguggen@srcer.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smguggen/assessments/issues"
+  },
+  "homepage": "https://github.com/smguggen/assessments#readme",
+  "dependencies": {
+    "ternal": "^1.0.3"
+  }
+}

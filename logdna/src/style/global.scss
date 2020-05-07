@@ -1,0 +1,47 @@
+body, html {
+    min-width:800px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.el-header {
+    padding:0;
+}
+
+h1 {
+    margin-left:1.5em;     
+}
+
+h1, h2, h3, .cap {
+    text-transform:capitalize;
+}
+
+.flex {
+    display:flex;
+    &.center-v {
+        align-items:center;
+    }
+    &.center-h {
+        justify-content:center;
+    }
+}
+
+.reg {
+    background-color:$white;
+}
+
+.dark {
+    background-color:$light-gray;
+}
+
+.darker {
+    background-color:$gray;
+}
+
+.raised {
+    z-index: 1;
+    &.double {
+        z-index:2;
+    }
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="/Users/sguggen/Documents/@srcer/lib/f963869a-0cf1-4139-9ca2-cdce021a6d97/src/tests/App.test.js" errors="0" package="/Users/sguggen/Documents/@srcer/lib/f963869a-0cf1-4139-9ca2-cdce021a6d97/src/tests/App.test.js" hostname="localhost" tests="3" failures="0" time="2.083" timestamp="2020-04-02T17:00:00">
+    <properties>
+    </properties>
+    <testcase classname="DateAPI &lt;App /&gt;" name="complete app renders without crashing" time="0">
+    </testcase>
+    <testcase classname="DateAPI &lt;App /&gt;" name="check if service is used to fetch data from the API" time="0">
+    </testcase>
+    <testcase classname="DateAPI &lt;App /&gt;" name="check if button click splits and displays the date" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

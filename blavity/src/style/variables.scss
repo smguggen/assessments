@@ -1,0 +1,22 @@
+$white: #fff;
+$darker-white: #f9fafb;
+
+$darker-gray: #606266;
+$dark-gray: #DCDFE6;
+$gray: #D8D8D8;
+$light-gray: #EFEFEF;
+$lighter-gray: #F3F3F3;
+
+$placeholder: #C0C4CC;
+
+@mixin xout {
+    &::before {
+        content: '\2715';
+        display:inline;
+        color: $placeholder;
+        font-size: 20px;
+        top: 3px;
+        right: 24px;
+        position:relative;
+    }
+}

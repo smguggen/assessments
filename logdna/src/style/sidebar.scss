@@ -1,0 +1,123 @@
+.fixed {
+    position:fixed;
+    top:0;
+    bottom:0;
+    &.left {
+        left:0;
+    }
+    &.right {
+        right:0;
+    }
+    &.shadowed {
+        box-shadow: 5px 3px 12px 6px #ccc
+    }
+    &.invisiscroll {
+        @include scrollbar;
+    }
+}
+
+ul {
+    padding:0;
+    list-style-type: none;
+    li {
+        padding:0.7em 2.5em 0.7em;
+        font-size:18px;
+        &.clickable {
+            cursor:pointer;
+        }
+        &.selected {
+            background-color:$darker-white;
+            font-weight:700;
+        }
+    }
+}
+
+.search-wrapper {
+    margin-top:20px;
+    .search {
+        margin-left:2.5em;
+        width:80%;
+        border: 1px solid $gray;
+        .el-input__inner {
+            padding-right:30px;
+        }
+    }
+}
+
+.xout {
+    @include xout;
+    &.fave {
+        &::before {
+            top:0;
+        }
+    }
+}
+
+.fave-container {
+    @include scrollbar($darker-white, $dark-gray);
+    h3 {
+        margin-left:10%;
+    }
+    .fave-wrapper {
+        @include flexCenter;
+        align-items: flex-start;
+        width:80%;
+        width:100%;
+        h3 {
+            margin-left:initial;
+            color:$placeholder;
+            font-weight:400;
+        }
+        .empty {
+            padding-top:75%;
+        }
+        .full {
+            width:80%;
+            text-align:left;
+            .fave-item {
+                background-color:$lighter-gray;
+                margin: 10px 0;
+                padding:0;
+                position:relative;
+                &:first-child {
+                    margin-top:0;
+                }
+                .fave-top {
+                    display:flex;
+                    padding:0.7em 0 0.7em 15px;
+                    width:100%;
+                    justify-content:space-between;
+                }
+                .memo-wrapper {
+                    padding:0 0 1.5em 15px;
+                    font-size:14px;
+                    .memo-title {
+                        color:#909399;
+                    }
+                    .memo-text {
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.el-popover {
+    border: 2px solid $gray;
+    border-radius:0;
+    .popper__arrow {
+        display:none;
+    }
+    .el-popconfirm__action {
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: flex-end;
+        font-weight:400;
+        .el-button--text {
+            font-weight:400;
+            margin: 0 5px;
+        }
+    }
+}
+

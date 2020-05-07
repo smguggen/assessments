@@ -1,0 +1,42 @@
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+@mixin flexCenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin scrollbar($track:$light-gray, $thumb: $darker-white) {
+    
+    &::-webkit-scrollbar
+    {
+      width: 16px;
+    }
+    
+    &::-webkit-scrollbar-track
+    {
+        background: $track;
+    }
+    
+    &::-webkit-scrollbar-thumb
+    {
+      background: $thumb;
+    }
+}
+
+@mixin xout {
+    &::before {
+        content: '\2715';
+        display:inline;
+        color: $placeholder;
+        font-size: 20px;
+        top: 3px;
+        right: 24px;
+        position:relative;
+    }
+}
