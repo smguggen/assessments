@@ -1,6 +1,6 @@
 # Skill Assessments 
 
-## View Locally
+## Demos
 1. LogDna
 ```bash
 npm run logdna
